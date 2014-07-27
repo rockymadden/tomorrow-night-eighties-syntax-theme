@@ -1,31 +1,35 @@
+@import "syntax-variables";
+
 .editor-colors {
-  background-color: #2d2d2d;
-  color: #cccccc;
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 }
 
 .editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 
-  background-color: #2d2d2d;
-  color: #cccccc;
-
-  .invisible-character,
   .indent-guide {
-    color: #515151;
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
   }
 
   .gutter {
-    background-color: #393939;
-    border-right: 2px solid #515151;
+    color: @syntax-gutter-text-color;
+    background-color: @syntax-gutter-background-color;
+    border-right: 2px solid @syntax-gutter-border-color;
 
     .line-number {
-      padding: 0 0.25em 0 0.5em;
       &.cursor-line {
-        background-color: #515151;
-        color: #b4b7b4;
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
       }
 
       &.cursor-line-no-selection {
-        color: #b4b7b4;
+        color: @syntax-gutter-text-color-selected;
       }
     }
   }
@@ -33,7 +37,7 @@
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: #999999;
+    color: @comment;
   }
 
   .scroll-view {
@@ -41,263 +45,262 @@
   }
 
   .invisible {
-    color: #cccccc;
+    color: @syntax-text-color;
   }
 
   .cursor {
-    color: #cccccc;
+    color: @syntax-cursor-color;
   }
 
   .selection .region {
-    background-color: lighten(#393939, 10%);
+    background-color: @syntax-selection-color;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
   }
 }
 
 .editor .search-results .marker .region {
   background-color: transparent;
-  border: 1px solid #888;
+  border: 1px solid @syntax-result-marker-color;
 }
 
 .editor .search-results .marker.current-result .region {
-  border: 1px solid #fff;
+  border: 1px solid @syntax-result-marker-color-selected;
 }
 
 .comment {
-  color: #999999;
+  color: @comment;
 }
 
 .entity {
-
   &.name.type {
-    color: #ffcc66;
-    text-decoration: underline;
+    color: @yellow;
   }
 
   &.other.inherited-class {
-    color: #99cc99;
+    color: @red;
   }
 }
 
 .keyword {
-  color: #cc99cc;
+  color: @purple;
 
   &.control {
-    color: #cc99cc;
+    color: @purple;
   }
 
   &.operator {
-    color: #cccccc;
+    color: @syntax-text-color;
   }
 
   &.other.special-method {
-    color: #6699cc;
+    color: @blue;
   }
 
   &.other.unit {
-    color: #f99157;
+    color: @orange;
   }
 }
 
 .storage {
-  color: #cc99cc;
+  color: @purple;
 }
 
 .constant {
-  color: #f99157;
+  color: @orange;
 
   &.character.escape {
-    color: #66cccc;
+    color: @aqua;
   }
 
   &.numeric {
-    color: #f99157;
+    color: @orange;
   }
 
   &.other.color {
-    color: #66cccc;
+    color: @aqua;
   }
 
   &.other.symbol {
-    color: #99cc99;
+    color: @green;
   }
 }
 
 .variable {
-  color: #f2777a;
+  color: @red;
 
   &.interpolation {
-    color: #a3685a;
+    color: darken(@red, 10%);
   }
 
   &.parameter.function {
-    color: #cccccc;
+    color: @syntax-text-color;
   }
 }
 
 .invalid.illegal {
-  background-color: #f2777a;
-  color: #2d2d2d;
+  background-color: @red;
+  color: @syntax-background-color;
 }
 
 .string {
-  color: #99cc99;
+  color: @green;
 
 
   &.regexp {
-    color: #66cccc;
+    color: @aqua;
 
     .source.ruby.embedded {
-      color: #FF8000;
+      color: @orange;
     }
   }
 
   &.other.link {
-    color: #f2777a;
+    color: @red;
   }
 }
 
 .punctuation {
-
   &.definition {
     &.comment {
-      color: #999999;
+      color: @comment;
     }
 
     &.string,
     &.variable,
     &.parameters,
     &.array {
-      color: #cccccc;
+      color: @syntax-text-color;
     }
 
     &.heading,
     &.identity {
-      color: #6699cc;
+      color: @blue;
     }
 
     &.bold {
-      color: #ffcc66;
+      color: @yellow;
       font-style: bold;
     }
 
     &.italic {
-      color: #cc99cc;
+      color: @purple;
       font-style: italic;
     }
   }
 
   &.section.embedded {
-    color: #a3685a;
+    color: @yellow;
+    background-color: fadeout(@yellow, 93%);
   }
-
 }
 
 .support {
   &.class {
-    color: #ffcc66;
+    color: @yellow;
   }
 
   &.function  {
-    color: #66cccc;
+    color: @blue;
 
     &.any-method {
-      color: #6699cc;
+      color: @blue;
     }
   }
 }
 
 .entity {
-
   &.name.function {
-    color: #6699cc;
+    color: @blue;
   }
 
   &.name.class, &.name.type.class {
-    color: #ffcc66;
+    color: @yellow;
   }
 
   &.name.section {
-    color: #6699cc;
+    color: @blue;
   }
 
   &.name.tag {
-    color: #f2777a;
-    text-decoration: underline;
+    color: @red;
   }
 
   &.other.attribute-name {
-    color: #f99157;
+    color: @orange;
 
     &.id {
-      color: #6699cc;
+      color: @blue;
     }
   }
 }
 
 .meta {
   &.class {
-    color: #ffcc66;
+    color: @yellow;
   }
 
   &.link {
-    color: #f99157;
+    color: @orange;
   }
 
   &.require {
-    color: #6699cc;
+    color: @blue;
   }
 
   &.selector {
-    color: #cc99cc;
+    color: @purple;
   }
 
   &.separator {
-    background-color: #515151;
-    color: #cccccc;
+    background-color: @current-line;
+    color: @syntax-text-color;
   }
 }
 
 .none {
-  color: #cccccc;
+  color: @syntax-text-color;
 }
 
 .markup {
   &.bold {
-    color: #f99157;
+    color: @orange;
     font-style: bold;
   }
 
   &.changed {
-    color: #cc99cc;
+    color: @purple;
   }
 
   &.deleted {
-    color: #f2777a;
+    color: @red;
   }
 
   &.italic {
-    color: #cc99cc;
+    color: @purple;
     font-style: italic;
   }
 
   &.heading .punctuation.definition.heading {
-    color: #6699cc;
+    color: @blue;
   }
 
   &.inserted {
-    color: #99cc99;
+    color: @green;
   }
 
   &.list {
-    color: #f2777a;
+    color: @red;
   }
 
   &.quote {
-    color: #f99157;
+    color: @orange;
   }
 
   &.raw.inline {
-    color: #99cc99;
+    color: @green;
   }
 }
 
