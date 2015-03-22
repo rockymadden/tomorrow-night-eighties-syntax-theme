@@ -1,7 +1,7 @@
 {
   "name": "tomorrow-night-eighties-syntax",
   "theme": "syntax",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Tomorrow Night Eighties syntax theme for Atom.",
   "repository": "https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme",
   "license": "MIT",
