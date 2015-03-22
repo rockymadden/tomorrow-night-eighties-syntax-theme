@@ -2,12 +2,38 @@ atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
-  .indent-guide {
-    color: @syntax-indent-guide-color;
+  .line.cursor-line {
+    background-color: @syntax-cursor-line;
+  }
+
+  .cursor {
+    border-left: 2px solid @syntax-cursor-color;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
   }
 
   .invisible-character {
     color: @syntax-invisible-character-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+    background-color: @syntax-bracket-matcher-background-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
   }
 
   .gutter {
@@ -35,34 +61,5 @@ atom-text-editor, :host {
 
   .scroll-view {
     padding-left: 10px;
-  }
-
-  .invisible {
-    color: @syntax-text-color;
-  }
-
-  .cursor {
-    color: @syntax-cursor-color;
-  }
-
-  .selection .region {
-    background-color: @syntax-selection-color;
-  }
-
-  .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
-  }
-
-  .search-results .marker .region {
-    background-color: transparent;
-    border: 1px solid @syntax-result-marker-color;
-  }
-
-  .search-results .marker.current-result .region {
-    border: 1px solid @syntax-result-marker-color-selected;
-  }
-
-  &.mini .scroll-view {
-    padding-left: 1px;
   }
 }

@@ -1,11 +1,16 @@
 @import "colors";
 
-// This defines all syntax variables that syntax themes must implement when they
-// include a syntax-variables.less file.
+// Custom syntax definitions
+
+// needs to be semi-transparent to show search results
+@syntax-cursor-line: lighten(fade(@background, 4%), 100%);
+@syntax-bracket-matcher-background-color: @current-line;
+
+// Official syntax definitions
 
 // General colors
 @syntax-text-color: @foreground;
-@syntax-cursor-color: @foreground;
+@syntax-cursor-color: darken(@foreground, 10%);
 @syntax-selection-color: @selection;
 @syntax-background-color: @background;
 
