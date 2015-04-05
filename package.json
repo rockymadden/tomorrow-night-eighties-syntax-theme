@@ -3,6 +3,13 @@
   "theme": "syntax",
   "version": "0.6.0",
   "description": "Tomorrow Night Eighties syntax theme for Atom.",
+  "keywords": [
+    "tomorrow",
+    "night",
+    "eighties",
+    "syntax",
+    "theme"
+  ],
   "repository": "https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme",
   "license": "MIT",
   "engines": {
