@@ -3,6 +3,18 @@
     color: @aqua;
   }
 
+  &.variable {
+    color: @foreground;
+
+    &.class {
+      color: @red;
+    }
+  }
+
+  &.support.object {
+    color: @yellow;
+  }
+
   &.meta.brace.square {
     color: @blue;
     background-color: fadeout(@blue, 93%);
@@ -18,8 +30,21 @@
     background-color: fadeout(@aqua, 93%);
   }
 
-  &.punctuation.definition.string {
-    color: @green;
-    background-color: fadeout(@green, 93%);
+  &.punctuation {
+    &.separator.key-value {
+      color: @aqua;
+    }
+
+    &.definition {
+      &.string {
+        color: @green;
+        background-color: fadeout(@green, 93%);
+      }
+
+      &.parameters {
+        color: @aqua;
+        background-color: fadeout(@aqua, 93%);
+      }
+    }
   }
 }
