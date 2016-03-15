@@ -1,4 +1,8 @@
 .js {
+  &.constant.other.property {
+    color: @foreground;
+  }
+
   &.keyword.operator {
     color: @aqua;
   }
@@ -16,6 +20,10 @@
   }
 
   &.support {
+    &.constant {
+      color: @foreground;
+    }
+
     &.object {
       color: @yellow;
     }
