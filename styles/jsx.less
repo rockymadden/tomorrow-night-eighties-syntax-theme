@@ -1,12 +1,10 @@
 .jsx {
-  &.support.class.component {
-    color: @red;
+  &.punctuation.definition.tag {
+    color: @foreground;
+    background-color: fadeout(@foreground, 93%);
   }
 
-  &.punctuation {
-    &.definition.tag {
-      color: @foreground;
-      background-color: fadeout(@foreground, 93%);
-    }
+  &.support.class.component {
+    color: @red;
   }
 }
