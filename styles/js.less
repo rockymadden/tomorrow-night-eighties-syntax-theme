@@ -39,14 +39,17 @@
 
   &.meta.brace.square {
     color: @blue;
+    background-color: fadeout(@blue, 93%);
   }
 
   &.meta.brace.curly {
     color: @red;
+    background-color: fadeout(@red, 93%);
   }
 
   &.meta.brace.round {
     color: @aqua;
+    background-color: fadeout(@aqua, 93%);
   }
 
   &.meta.delimiter.period,
@@ -62,10 +65,12 @@
     &.definition {
       &.string {
         color: @green;
+        background-color: fadeout(@green, 93%);
       }
 
       &.parameters {
         color: @aqua;
+        background-color: fadeout(@aqua, 93%);
       }
 
       &.arguments {
@@ -78,9 +83,5 @@
         background-color: fadeout(@red, 93%);
       }
     }
-  }
-
-  &.variable.other.readwrite {
-    color: @orange
   }
 }
