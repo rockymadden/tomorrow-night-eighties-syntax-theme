@@ -6,6 +6,10 @@ All changes to this project are documented in this file. This project adheres to
 ### Added
 - Add README badges
 
+### Changed
+- Fix typos in the CHANGELOG.md
+
+## [1.0.0] - 2016-11-21
 ### Added
 - Add a LICENSE file
 - Add a Add CHANGELOG.md
@@ -15,7 +19,7 @@ All changes to this project are documented in this file. This project adheres to
 - Improve package.json
 - Update atom engine to >=1.13
 
-## [0.17.0] - 2015-09-21
+## [0.17.0] - 2016-09-21
 ### Changed
 - Fix broken this variable style
 - Fix class curly brace style
