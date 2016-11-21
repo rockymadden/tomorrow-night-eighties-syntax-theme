@@ -24,6 +24,6 @@
     "url": "https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/issues"
   },
   "engines": {
-    "atom": ">0.59.0"
+    "atom": ">=1.13"
   }
 }
