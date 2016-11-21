@@ -1,46 +1,46 @@
-.gfm {
+.syntax--gfm {
   -webkit-font-smoothing: auto;
 
-  .marker {
+  .syntax--marker {
     color: @red;
   }
 
-  .bold {
+  .syntax--bold {
     color: @yellow;
     font-style: bold;
   }
 
-  .italic {
+  .syntax--italic {
     color: @purple;
     font-style: italic;
   }
 
-  .quote {
+  .syntax--quote {
     color: @green;
   }
 
-  .list {
+  .syntax--list {
     color: @aqua;
   }
 
-  .link {
+  .syntax--link {
     color: @blue;
 
-    & .entity {
+    & .syntax--entity {
       color: @foreground;
     }
 
-    & .begin,
-    & .end {
+    & .syntax--begin,
+    & .syntax--end {
       background-color: fadeout(@blue, 93%);
     }
   }
 
-  .raw {
+  .syntax--raw {
     color: darken(@foreground, 12%);
   }
 
-  .hr {
+  .syntax--hr {
     background-color: @current-line;
     color: @foreground;
   }
