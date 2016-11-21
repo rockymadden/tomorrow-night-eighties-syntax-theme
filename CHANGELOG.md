@@ -4,6 +4,9 @@ All changes to this project are documented in this file. This project adheres to
 
 ## [Unreleased]
 ### Added
+- Add README badges
+
+### Added
 - Add a LICENSE file
 - Add a Add CHANGELOG.md
 
