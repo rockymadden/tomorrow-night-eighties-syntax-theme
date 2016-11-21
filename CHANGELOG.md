@@ -3,6 +3,8 @@
 All changes to this project are documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.0.2] - 2016-11-21
 ### Changed
 - Fix typos in the README.md
 
@@ -103,7 +105,8 @@ All changes to this project are documented in this file. This project adheres to
 ### Added
 - Created repository.
 
-[Unreleased]: https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/compare/v0.17.0...v1.0.0
 [0.17.0]: https://github.com/rockymadden/tomorrow-night-eighties-syntax-theme/compare/v0.16.0...v0.17.0
