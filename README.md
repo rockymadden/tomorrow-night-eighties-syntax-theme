@@ -4,8 +4,6 @@
 [![Chat][chat-img]][chat-url]
 [![License][license-img]][license-url]
 
-Ryan Sobol's shareable ESLint configuration
-
 Atom syntax theme using the ever popular Tomorrow Night Eighties colors:
 
 ![](https://github.com/ChrisKempson/Tomorrow-Theme/raw/master/Images/Tomorrow-Night-Eighties-Palette.png)

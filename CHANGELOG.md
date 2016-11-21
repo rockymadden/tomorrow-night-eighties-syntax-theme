@@ -2,6 +2,10 @@
 
 All changes to this project are documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Changed
+- Fix typos in the README.md
+
 ## [1.0.1] - 2016-11-21
 ### Added
 - Add README badges
