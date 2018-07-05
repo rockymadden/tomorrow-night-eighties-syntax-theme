@@ -5,6 +5,7 @@ All changes to this project are documented in this file. This project adheres to
 ## [Unreleased]
 ### Added
 - Add JSON styles to match Atom JavaScript styles and VSCode JSON styles
+- Make guides & invisible characters more visible
 
 ## [1.0.2] - 2016-11-21
 ### Changed
