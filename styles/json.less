@@ -1,0 +1,37 @@
+.syntax--json {
+  .syntax--punctuation {
+    &.syntax--separator {
+      color: @aqua;
+    }
+
+    &.syntax--definition.syntax--dictionary {
+      color: @red;
+      background-color: fadeout(@red, 93%);
+    }
+
+    &.syntax--definition.syntax--array {
+      color: @blue;
+      background-color: fadeout(@blue, 93%);
+    }
+  }
+
+  .syntax--value {
+    .syntax--string {
+      color: @green;
+
+      .syntax--punctuation {
+        background-color: fadeout(@green, 93%);
+      }
+    }
+  }
+
+  .syntax--key {
+    .syntax--string {
+      color: @yellow;
+
+      .syntax--punctuation {
+        background-color: fadeout(@yellow, 93%);
+      }
+    }
+  }
+}
